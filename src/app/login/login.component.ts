@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -12,4 +13,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  email: FormControl = new FormControl('');
+  mdp:FormControl = new FormControl('')
+  
 }

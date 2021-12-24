@@ -3,3 +3,14 @@
 	margin:0;
 	padding: 0;
 }
+
+a{
+	text-decoration: none;
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+.content{
+	background: transparent linear-gradient(180deg, #FFFFFF 0%, #CCEEFF 100%) 0% 0% no-repeat padding-box;
+}

@@ -3,8 +3,8 @@
 		<div class="login-box">
 			<img src='../../assets/Calque 2.svg' alt="logo" />
 			<form class="login-form">
-				<input class="form-field" type="text" placeholder="Adresse e-mail" />
-				<input type="password" class="form-field" placeholder="mot de passe" />
+				<input class="form-field" type="text" placeholder="Adresse e-mail"  [formControl]="email"/>
+				<input type="password" class="form-field" placeholder="mot de passe" [formControl]='mdp' />
 
 				<div class="login-button">
 					<p>Se connecter</p>
@@ -13,6 +13,9 @@
 			</form>
 
 			<p>Mot de passe oublie?</p>
+			
 		</div>
 	</div>
+
+
 </div>

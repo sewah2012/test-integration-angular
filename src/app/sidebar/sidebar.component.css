@@ -1,0 +1,80 @@
+.sidebar{
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	box-shadow: 5px 0px 29px #00000047;
+	width: 288px;
+	height: 100vh;
+}
+
+.sidebar-brand{
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem 1.5rem;
+	align-items: center;
+}
+
+.sidebar-brand.logo1 {
+	width: 139px;
+	height: 46px;
+	object-fit: contain;
+}
+
+.sidebar-brand.logo2{
+	width: 609px;
+	height: 69px;
+	/* object-fit: contain; */
+}
+
+
+
+.sidebar-menu-items{
+	list-style: none;
+	/* background-color: brown; */
+}
+
+/* menu link  */
+.item{
+	display: flex;
+	align-items: center;
+	padding: .5rem 1.5rem;
+	color: #044289;
+}
+
+.item:hover{
+	background: transparent linear-gradient(271deg, #CBEBFB 0%, #1B579F 100%) 0% 0% no-repeat padding-box;
+	box-shadow: 0px 3px 14px #0000003D;
+	border-radius: 0px 16px 16px 0px;
+	opacity: 1;
+	cursor: pointer;
+	color: #FFFFFF;
+	
+}
+
+
+
+.item:hover svg path{
+	/* filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%); */
+	fill: #FFFFFF !important;
+}
+
+
+.item p {
+	text-align: left;
+	font: normal normal 600 1rem Titillium Web;
+	letter-spacing: .5px;
+	
+	margin-left: 1rem;
+}
+
+.active-link{
+	background: transparent linear-gradient(271deg, #CBEBFB 0%, #1B579F 100%) 0% 0% no-repeat padding-box;
+	box-shadow: 0px 3px 14px #0000003D;
+	border-radius: 0px 16px 16px 0px;
+	opacity: 1;
+	cursor: pointer;
+	color: #FFFFFF;
+}
+
+.active-link svg path{
+	/* filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%); */
+	fill: #FFFFFF !important;
+}
