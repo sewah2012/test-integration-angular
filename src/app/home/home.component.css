@@ -104,3 +104,66 @@ color: #878787;
 	color: #636363;
 	font: normal normal normal 12px/24px Titillium Web;
 }
+
+
+/* middle section  */
+
+.mid-section{
+	display: flex;
+}
+.mid-section-left, .mid-section-right{
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	box-shadow: 0px 2px 6px #00000038;
+	border-radius: 9px;
+	padding: .6rem 1rem;
+	max-width: 523px;
+	display: flex;
+	margin: 1rem;
+}
+
+.left-item{
+	display: flex;
+	
+}
+
+.toggle{
+	margin-left: 1rem;
+}
+
+.left-item p{
+	text-align: left;
+	font: normal normal 600 16px/24px Titillium Web;
+	letter-spacing: 0px;
+	color: #1B579F;
+}
+
+.mid-section-right p{
+	font: normal normal 600 16px/24px Titillium Web;
+	color: #1B579F;
+}
+
+.mid-section-right input{
+	border: none;
+	background-color: transparent;
+	color: #5B5B5B;
+	text-align: center;
+}
+.mid-section-right input::-webkit-calendar-picker-indicator{
+	display: none;
+
+}
+
+.from-date{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 1rem;
+}
+
+.end-date{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 1rem;
+}
+
