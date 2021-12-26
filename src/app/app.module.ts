@@ -10,6 +10,7 @@ import { GrandMenuComponent } from './grand-menu/grand-menu.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { SlidToggleComponent } from './slid-toggle/slid-toggle.component';
+import { ListingComponent } from './listing/listing.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { SlidToggleComponent } from './slid-toggle/slid-toggle.component';
     GrandMenuComponent,
     SidebarComponent,
     SlidToggleComponent,
+    ListingComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,142 @@
+.wrapper{
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	box-shadow: 0px 2px 6px #00000038;
+	border-radius: 9px;
+	height: 51px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: .5rem 0 1rem 0;
+	position: relative;
+}
+
+.listing-item{
+	
+	display: flex;
+	align-items: center;
+	
+	/* padding: 0 .5rem; */
+}
+
+.border-side{
+	padding: 0;
+	margin-right: 1rem;
+}
+
+.border-side.nonService > path {
+	fill: #F6CD00;
+}
+
+.divider{
+	border: 1px solid #B4E3FB;
+	height: 30px;
+	margin-right:1rem ;
+}
+
+.title{
+	text-align: left;
+	font: normal normal 600 12px/19px Titillium Web;
+	letter-spacing: 0px;
+	color: #9C9C9C;
+}
+
+.value{
+	display: flex;
+	align-items: center;
+}
+.value p{
+	text-align: left;
+	font: normal normal 600 14px/21px Titillium Web;
+	letter-spacing: 0px;
+	color: #3D3D3D;
+	margin-right: 1rem;
+}
+
+.value span{
+	font: normal normal 600 20px/20px Titillium Web;
+	color: #9DDDFE;
+}
+
+.listing-section{
+	display: flex;
+}
+
+.icon{
+	margin-right: 1rem;
+}
+
+.sequentiel{
+	margin-right:.5rem ;
+}
+
+.more{
+	margin-right: 1rem;
+	cursor: pointer;
+}
+
+.ajouter{
+	display: flex;
+	justify-content: space-evenly;
+	width: 7rem;
+}
+
+.ajouter p{
+	text-align: left;
+font: normal normal 600 12px/19px Titillium Web;
+letter-spacing: 0px;
+color: #81B83A;
+}
+
+.ajouter small {
+	text-align: left;
+font: normal normal 600 14px/21px Titillium Web;
+letter-spacing: 0px;
+color: #9C9C9C;
+}
+
+.count-button{
+	width: 30px;
+	height: 16px;
+	background: #1B579F 0% 0% no-repeat padding-box;
+	border-radius: 4px;
+	margin: 0 .5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	padding: .1rem;
+
+}
+
+.count-button p{
+	color: #FFFFFF;
+	margin: .4rem;
+	font-size: .8rem;
+	width: 5px;
+	
+}
+
+.add_entite{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.add_entite > img{
+	cursor: pointer;
+}
+
+/* testing small menu pop up  */
+
+.small-menu{
+	width: 366px;
+height: 127px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 9px 16px #00000091;
+border: 2px solid #2976A8;
+border-radius: 16px;
+z-index: 99;
+position: absolute;
+right: 1.5rem;
+top: 2rem;
+}

@@ -1,0 +1,108 @@
+<div class="wrapper">
+	<div class="listing-item">
+		<!-- <img  class="border-side" src="../../assets/Rectangle 120.png" alt="border-side" /> -->
+		<svg [class.nonService]='!enService' class="border-side"  xmlns="http://www.w3.org/2000/svg" width="5" height="29" viewBox="0 0 5 29">
+			<path id="Rectangle_120" data-name="Rectangle 120" d="M5,0H5A0,0,0,0,1,5,0V29a0,0,0,0,1,0,0H5a5,5,0,0,1-5-5V5A5,5,0,0,1,5,0Z" transform="translate(5 29) rotate(180)" fill="#81b83a"/>
+		 </svg>
+		<div class="listing-section">
+			<img class="icon" src="../../assets/Icon awesome-hashtag-1.svg" alt="hashtag" />
+		
+			<div class="sequentiel">
+				<small class="title">No. Sequentiel</small>
+				<div class="value">
+					<p>{{noSequentiel}}</p>
+					<img *ngIf="enService" src='../../assets/Icon awesome-history-1.svg' alt='history' />
+				</div>
+			</div>
+		</div>
+
+		<div class="divider"></div>
+
+		<div class="listing-section">
+			<img class="icon" src="../../assets/license-plate-1.svg" alt="hashtag" />
+			<div class="sequentiel">
+				<small class="title">No. Matricule</small>
+				<div class="value">
+					<p *ngIf="matricule; else showThis">{{matricule}}</p>
+					<ng-template #showThis>
+						<div class="ajouter">
+							<small>---</small>
+							<img src='../../assets/Icon ionic-ios-add-circle-1.svg' alt="add-circle" />
+							<p>Ajouter</p>
+						</div>
+					</ng-template>
+				</div>
+			</div>
+		</div>
+
+		<div class="divider"></div>
+
+		<div class="listing-section">
+			<img class="icon" [src]="genre ? '../../assets/pickup-truck-side-view-1.svg' : '../../assets/pickup-truck-side-view-2.svg'" alt="hashtag" />
+			<div class="sequentiel">
+				<small class="title">Genre: {{genre ? genre : '---'}}</small>
+				<div class="value">
+					<p>{{brandName ? brandName : '---'}}</p>
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="divider"></div>
+
+		<div class="listing-section">
+			<img class="icon" [src]="gps ? '../../assets/gps2-1.svg' :'../../assets/gps2-2.svg'" alt="icon" />
+			<div class="sequentiel">
+				<small class="title">Boitiers GPS</small>
+				<div class="value">
+					<p *ngIf="gps; else showThis">{{gps}}</p>
+					<ng-template #showThis>
+						<div class="ajouter">
+							<small>---</small>
+							<img src='../../assets/Icon ionic-ios-add-circle-1.svg' alt="add-circle" />
+							<p>Ajouter</p>
+						</div>
+					</ng-template>
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="divider"></div>
+
+		<div class="listing-section">
+			<img class="icon" [src]="entite ? '../../assets/Icon awesome-sitemap-1.svg' : '../../assets/Icon awesome-sitemap-5.svg' " alt="hashtag" />
+			<div class="sequentiel">
+				<small class="title">Entite</small>
+				<div class="value">
+					<p *ngIf="entite ; else showThis">{{entite?.onee}} <span>></span> {{entite?.parce}} <span>></span> {{entite?.cour}}</p>
+					<ng-template #showThis>
+						<div class="ajouter">
+							<small>---</small>
+							<img src='../../assets/Icon ionic-ios-add-circle-1.svg' alt="add-circle" />
+							<p>Ajouter</p>
+						</div>
+					</ng-template>
+
+					<div *ngIf ="entite" class='add_entite'>
+						<div class="count-button">
+							<p>+2</p>
+							<p>x</p>	
+						</div>
+						<img src='../../assets/Icon ionic-ios-add-circle-1.svg' alt="add-circle" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div *ngIf="isSmallMenuOpen" class = "small-menu">
+			<h1>Small Menu Open</h1>
+		</div>
+	</div>
+
+	<div class="more" (click)="onDotsClick()">
+		<img src="../../assets/Icon ionic-md-more-1.svg" alt="more" />
+	</div>
+
+
+</div>

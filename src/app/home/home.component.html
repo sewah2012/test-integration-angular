@@ -169,5 +169,19 @@
 			</div>
 		</section>
 
+		<section class="listing">			
+			<app-listing 
+			*ngFor = "let listing of listings"
+				[enService] = "listing.enService"
+				[noSequentiel] = "listing.noSequentiel"
+				[matricule] = "listing.matricule"
+				[genre] = "listing.genre"
+				[brandName] = "listing.brandName"
+				[gps] = "listing.gps"
+				[entite] = "listing.entite"
+			>
+			</app-listing>
+		</section>
+
 	</div>
 </div>
