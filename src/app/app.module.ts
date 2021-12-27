@@ -11,6 +11,10 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { SlidToggleComponent } from './slid-toggle/slid-toggle.component';
 import { ListingComponent } from './listing/listing.component';
+import { AffectationService } from './affectation.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppMaterialModule } from './app-material/app-material.module';
+import { HistoryItemComponent } from './history-item/history-item.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +26,16 @@ import { ListingComponent } from './listing/listing.component';
     SidebarComponent,
     SlidToggleComponent,
     ListingComponent,
+    HistoryItemComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    AppMaterialModule
   ],
-  providers: [],
+  providers: [AffectationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

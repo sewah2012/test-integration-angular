@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AffectationService } from '../affectation.service';
 
 @Component({
   selector: 'app-home',
@@ -7,45 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   
-  listings = [
-      {
-        enService:true,
-        noSequentiel:8765,
-        matricule: "6612A6",
-        genre: "Pick Up",
-        brandName: "MITSUBISHI Pick Up",
-        gps:98755445666,
-        entite:{
-          onee:"ONEE",
-          parce: "Parce Central (NB)",
-          cour: "Course de ville(NB)"
-        }
-      },
-
-      {
-        enService:false,
-        noSequentiel:8765,
-        matricule: "",
-        genre: "",
-        brandName: "",
-        // gps:98755445666,
-        // entite:{
-        //   onee:"ONEE",
-        //   parce: "Parce Central (NB)",
-        //   cour: "Course de ville(NB)"
-        // }
-      }
-  ]
+  listings:any[]
 
   isSmallMenuOpen:Boolean
 
-  constructor() { }
+  constructor(private affectationService:AffectationService) { }
 
   ngOnInit(): void {
+    this.listings = this.affectationService.getListing()
+    this.affectationService.getOpenSmall().subscribe(res=>this.isSmallMenuOpen=res)
   }
 
+
   
-  openSmallMenu = ($event:any)=>{
-this.isSmallMenuOpen = $event
-  }
 }

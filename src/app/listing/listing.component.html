@@ -95,14 +95,20 @@
 			</div>
 		</div>
 
-		<div *ngIf="isSmallMenuOpen" class = "small-menu">
-			<h1>Small Menu Open</h1>
-		</div>
+		<!-- *ngIf="isSmallMenuOpen" [closeDots]="onDotsClick" -->
+		
+		
 	</div>
-
-	<div class="more" (click)="onDotsClick()">
+	<!-- (click)="onDotsClick()"" -->
+	<div class="more"  mat-icon-button [matMenuTriggerFor]="menu">
 		<img src="../../assets/Icon ionic-md-more-1.svg" alt="more" />
 	</div>
 
+	<mat-menu #menu="matMenu" >
+		<app-petit-menu  ></app-petit-menu>
+	</mat-menu>
+
 
 </div>
+
+<app-grand-menu></app-grand-menu>

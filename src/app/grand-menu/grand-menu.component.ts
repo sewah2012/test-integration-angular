@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-grand-menu',
   templateUrl: './grand-menu.component.html',
@@ -12,4 +13,5 @@ export class GrandMenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  
 }

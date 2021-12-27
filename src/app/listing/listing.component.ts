@@ -1,5 +1,6 @@
-import { ThrowStmt } from '@angular/compiler';
+
 import { Component, Input, OnInit} from '@angular/core';
+import { AffectationService } from '../affectation.service';
 
 @Component({
   selector: 'app-listing',
@@ -23,18 +24,15 @@ export class ListingComponent implements OnInit {
   @Input()
   entite:any
 
-  @Input()
-  isSmallMenuOpen:Boolean
+  
+  
 
 
-  constructor() { }
+  constructor(private affectationService:AffectationService) { }
 
   ngOnInit(): void {
+  
   }
 
-
-  onDotsClick = ()=>{
-   this.isSmallMenuOpen = !this.isSmallMenuOpen
-  }
 
 }

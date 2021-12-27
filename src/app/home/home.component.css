@@ -119,10 +119,13 @@ color: #878787;
 	max-width: 523px;
 	display: flex;
 	margin: 1rem;
+	display: flex;
+	align-items: center;
 }
 
 .left-item{
 	display: flex;
+	align-items: center;
 	
 }
 
@@ -135,11 +138,13 @@ color: #878787;
 	font: normal normal 600 16px/24px Titillium Web;
 	letter-spacing: 0px;
 	color: #1B579F;
+	margin-bottom: 0;
 }
 
 .mid-section-right p{
 	font: normal normal 600 16px/24px Titillium Web;
 	color: #1B579F;
+	margin-bottom: 0;
 }
 
 .mid-section-right input{

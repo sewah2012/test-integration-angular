@@ -1,7 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-*,body{
+*{
 	margin:0;
 	padding: 0;
+}
+
+p{
+	margin: 0;
 }
 
 a{
@@ -14,3 +18,22 @@ a{
 .content{
 	background: transparent linear-gradient(180deg, #FFFFFF 0%, #CCEEFF 100%) 0% 0% no-repeat padding-box;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.mat-menu-panel {
+	width: 250px;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	box-shadow: 0px 9px 16px #00000091;
+	border: 2px solid #2976A8;
+	border-radius: 16px;
+	padding: .51rem;
+}
+
+.my-custom-dialog {
+	position: absolute;
+	right: 0;
+	outline: 2px solid purple;
+	
+  }

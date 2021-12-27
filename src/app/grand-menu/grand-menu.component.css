@@ -1,0 +1,123 @@
+.grand-menu-wrapper{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 535px;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	box-shadow: 0px 3px 6px #00000057;
+	z-index: 101;
+}
+
+.grand-menu-content{
+	padding: 1.5rem;
+}
+
+
+.grand-menu-top{
+	height: 70px;
+	background: #9DDDFE 0% 0% no-repeat padding-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.grand-menu-top >h1 {
+	text-align: left;
+	font: normal normal 600 29px/44px Titillium Web;
+	letter-spacing: 0px;
+	color: #1B579F;
+	margin:0 .7rem;
+}
+
+.filter-buttons{
+	display: flex;
+	align-items: center;
+	justify-content: start;
+}
+
+.filter-button{
+	width: 49px;
+	height: 49px;
+	background: #1B579F 0% 0% no-repeat padding-box;
+	border-radius: 9px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 .5rem;
+}
+
+
+.content-top{
+	display:flex;
+	height: 51px;
+	margin-bottom: .5rem;
+}
+
+.content-dates{
+	flex: 1;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	box-shadow: 0px 2px 6px #1B579F46;
+	border: 1px solid #1B579F;
+	border-radius: 9px;
+	padding: .5rem;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.from-date{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 1rem;
+}
+
+.end-date{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* margin-left: 1rem; */
+}
+
+.content-dates p{
+	font: normal normal 600 16px/24px Titillium Web;
+	color: #1B579F;
+	margin-bottom: 0;
+}
+
+.content-dates input{
+	border: none;
+	background-color: transparent;
+	color: #5B5B5B;
+	text-align: center;
+}
+.content-dates input::-webkit-calendar-picker-indicator{
+	display: none;
+
+}
+
+/* bottom filters  */
+
+.content-toggles{
+	height: 48px;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	box-shadow: 0px 2px 6px #00000038;
+	border-radius: 9px;
+	padding: .5rem;
+	
+	display: flex;
+}
+
+.left-item{
+	display: flex;
+	align-items: center;
+	margin-right: 1rem;
+	
+}
+.left-item p{
+	text-align: left;
+	font: normal normal 600 16px/24px Titillium Web;
+	letter-spacing: 0px;
+	color: #1B579F;
+	margin-bottom: 0;
+}
+

@@ -1,0 +1,35 @@
+.petit-menu-item{
+	display: flex;
+	align-items: center;
+	margin-bottom: .5rem ;
+	cursor: pointer;
+	padding: 0 1rem;
+}
+
+.petit-menu-item:hover{
+	border-left: 2px solid #2976A8;
+}
+.petit-menu-item p{
+	text-align: left;
+	font: normal normal 600 13px/20px Titillium Web;
+	letter-spacing: 0px;
+	color: #1B579F;
+	padding-left:.5rem ;
+}
+
+/* .small-menu{
+	width: 250px;
+	/* height: 127px; */
+	/* background: #FFFFFF 0% 0% no-repeat padding-box;
+	box-shadow: 0px 9px 16px #00000091;
+	border: 2px solid #2976A8;
+	border-radius: 16px;
+	
+	padding: .51rem; */
+/* } */ 
+
+.divider{
+	border: 1px solid #B9B9B9;
+	width: 90%;
+	margin:.5rem ;
+}
