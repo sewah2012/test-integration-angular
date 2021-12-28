@@ -2,11 +2,11 @@
 	<div class="wrapper">
 		<div class="login-box">
 			<img src='../../assets/Calque 2.svg' alt="logo" />
-			<form class="login-form">
+			<form class="login-form" >
 				<input class="form-field" type="text" placeholder="Adresse e-mail"  [formControl]="email"/>
 				<input type="password" class="form-field" placeholder="mot de passe" [formControl]='mdp' />
 
-				<div class="login-button">
+				<div (click)="onSubmit()" class="login-button">
 					<p>Se connecter</p>
 					<img src="../../assets/Icon ionic-ios-arrow-forward.svg" alt="icon-forward" />
 				</div>
