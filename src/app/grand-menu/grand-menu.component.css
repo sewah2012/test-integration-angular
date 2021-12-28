@@ -12,6 +12,10 @@
 	padding-right: 2rem;
 }
 
+.grand-menu-top >img {
+	cursor: pointer;
+}
+
 .top-title{
 	flex: 1;
 	display: flex;

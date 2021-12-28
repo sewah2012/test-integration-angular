@@ -116,8 +116,9 @@
 
 }
 
-.filter-button{
-	padding:0 .5rem;
+.filter-button p{
+	padding:0 .25rem;
+	margin-top: .5rem;
 	color: #636363;
 	font: normal normal normal 12px/24px Titillium Web;
 }
