@@ -1,15 +1,6 @@
-.grand-menu-wrapper{
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 535px;
-	background: #FFFFFF 0% 0% no-repeat padding-box;
-	box-shadow: 0px 3px 6px #00000057;
-	z-index: 101;
-}
-
 .grand-menu-content{
 	padding: 1.5rem;
+	
 }
 
 
@@ -17,11 +8,18 @@
 	height: 70px;
 	background: #9DDDFE 0% 0% no-repeat padding-box;
 	display: flex;
+	align-items: center;
+	padding-right: 2rem;
+}
+
+.top-title{
+	flex: 1;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.grand-menu-top >h1 {
+.top-title h1 {
 	text-align: left;
 	font: normal normal 600 29px/44px Titillium Web;
 	letter-spacing: 0px;
@@ -62,6 +60,12 @@
 	padding: .5rem;
 	display: flex;
 	justify-content: space-evenly;
+
+}
+
+.content-dates input:focus{
+	outline: none;
+
 }
 
 .from-date{
@@ -70,6 +74,7 @@
 	justify-content: center;
 	margin-right: 1rem;
 }
+
 
 .end-date{
 	display: flex;
@@ -113,6 +118,7 @@
 	margin-right: 1rem;
 	
 }
+
 .left-item p{
 	text-align: left;
 	font: normal normal 600 16px/24px Titillium Web;

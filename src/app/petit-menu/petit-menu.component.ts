@@ -1,6 +1,5 @@
 import { Component, Input, OnInit, HostListener } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { AffectationService } from '../affectation.service';
 import { GrandMenuComponent } from '../grand-menu/grand-menu.component';
 
 @Component({
@@ -11,7 +10,7 @@ import { GrandMenuComponent } from '../grand-menu/grand-menu.component';
 export class PetitMenuComponent implements OnInit {
   
  
-  constructor(private affectationService:AffectationService, public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
@@ -22,13 +21,21 @@ export class PetitMenuComponent implements OnInit {
 
   }
 
+  
+
   openDialog() {
     this.dialog.open(GrandMenuComponent, {
       data: {
-        animal: 'panda',
+        id: 11,
       },
-      panelClass:'my-custom-dialog'
+      panelClass:'my-custom-dialog',
+      position:{ 
+        top: '0px',
+        right: '0px'
+      }
     });
   }
+
+  
 
 }

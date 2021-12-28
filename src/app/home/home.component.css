@@ -1,7 +1,14 @@
 .home{
-
 	display: flex;
 	
+}
+
+.sidebar{
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	box-shadow: 5px 0px 29px #00000047;
+	width: 280px;	
+	z-index: 900;
+	padding-bottom: 5rem;
 }
 .content-area{
 	width: 1644px;
@@ -38,6 +45,9 @@
 }
 .profile-info{
 	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	margin: 0 .6rem;
 }
 .profile-info h4{
@@ -46,13 +56,20 @@
 	font: normal normal 600 16px/22px Noto Sans;
 	letter-spacing: 0px;
 	color: #1B579F;
+	margin-bottom: 0;
 }
 
 .profile-info p {
 	text-align: left;
-font: normal normal normal 16px/22px Noto Sans;
-letter-spacing: 0px;
-color: #878787;
+	font: normal normal normal 16px/22px Noto Sans;
+	letter-spacing: 0px;
+	color: #878787;
+	margin-bottom: 0;
+	
+}
+
+.profile >img{
+	margin-top: .25rem;
 }
 
 /* filter section  */

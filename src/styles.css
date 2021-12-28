@@ -17,6 +17,7 @@ a{
 
 .content{
 	background: transparent linear-gradient(180deg, #FFFFFF 0%, #CCEEFF 100%) 0% 0% no-repeat padding-box;
+	height: 100%;
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
@@ -31,9 +32,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 	padding: .51rem;
 }
 
-.my-custom-dialog {
-	position: absolute;
-	right: 0;
-	outline: 2px solid purple;
-	
+
+.my-custom-dialog .mat-dialog-container{
+	width: 535px; 
+	box-shadow: 0px 3px 6px #00000057;
+	z-index: 101;
+	border: 1px solid blue;
+	padding: 0;	
   }

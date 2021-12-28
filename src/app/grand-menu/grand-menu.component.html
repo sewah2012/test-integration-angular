@@ -1,7 +1,11 @@
-<div class="grand-menu-wrapper">
 	<div class="grand-menu-top">
-		<img src="../../assets/Icon awesome-history-big.svg" alt="hist" />
-		<h1>Historique </h1>
+		<div class="top-title">
+			<img src="../../assets/Icon awesome-history-big.svg" alt="hist" />
+			<h1>Historique </h1>
+		</div>
+		<img (click)="closeDialog()" src="../../assets/Icon ionic-ios-close.svg" alt="close" />
+
+
 	</div>
 	<div class="grand-menu-content">
 		<div class="content-filter">
@@ -54,8 +58,8 @@
 		</div>
 
 		<div class="content-list">
-			list of items
+			<app-history-item></app-history-item>
 		</div>
 	</div>
-</div>
+
 

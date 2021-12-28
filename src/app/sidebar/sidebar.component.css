@@ -1,9 +1,4 @@
-.sidebar{
-	background: #FFFFFF 0% 0% no-repeat padding-box;
-	box-shadow: 5px 0px 29px #00000047;
-	width: 288px;
-	height: 100vh;
-}
+
 
 .sidebar-brand{
 	display: flex;
@@ -29,14 +24,18 @@
 .sidebar-menu-items{
 	list-style: none;
 	/* background-color: brown; */
+	padding-left: 1.5rem;
+	
 }
 
 /* menu link  */
 .item{
 	display: flex;
-	align-items: center;
-	padding: .5rem 1.5rem;
+	align-items: flex-start;
+	padding: .1rem .1rem;
 	color: #044289;
+	margin: .5rem;
+	width: 250px;
 }
 
 .item:hover{
@@ -46,6 +45,7 @@
 	opacity: 1;
 	cursor: pointer;
 	color: #FFFFFF;
+	width: 250px;
 	
 }
 
@@ -60,8 +60,10 @@
 .item p {
 	text-align: left;
 	font: normal normal 600 1rem Titillium Web;
-	letter-spacing: .5px;
-	
+	/* letter-spacing: .5px; */
+	margin-bottom: .25rem;
+	margin-top: 0;
+	padding-bottom: 0;
 	margin-left: 1rem;
 }
 

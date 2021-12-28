@@ -1,0 +1,110 @@
+.history-wrapper{
+	display: flex;
+	justify-content: start;
+	align-items: flex-start;
+	padding: 1rem;
+}
+
+.left-side{
+	padding: .5rem .1rem;
+}
+.right-side{
+	flex: 1;
+	margin-left: 1rem;
+}
+.right-side > h1{
+	text-align: left;
+	font: normal normal 600 21px/32px Titillium Web;
+	letter-spacing: 0px;
+	color: #1B579F;
+	margin-top:0 ;
+	
+}
+
+.description{
+	display:flex ;
+	/* justify-content: space-between; */
+	flex-wrap: wrap;
+}
+
+.description p {
+	text-align: left;
+	font: normal normal 600 16px/24px Titillium Web;
+	letter-spacing: 0px;
+	color: #9C9C9C;
+	padding-right: 1rem;
+}
+
+.description span{
+	text-align: left;
+	font: normal normal 600 16px/24px Titillium Web;
+	letter-spacing: 0px;
+	color: #3D3D3D;
+}
+
+.description small{
+	font: normal normal 600 20px/20px Titillium Web;
+	color: #9DDDFE;
+}
+
+
+
+/* bottom of history item  */
+
+.item-bottom{
+	display: flex;
+	/* align-items: center; */
+}
+
+.start{
+	display: flex;
+	align-items: flex-start;
+	margin-right: 1.5rem;
+	padding-top: .25rem;
+}
+
+.start p{
+	margin-left: .7rem;
+}
+
+.end{
+	display: flex;
+	align-items: flex-start;
+}
+
+.end h2 {
+	text-align: left;
+	font: normal normal 600 16px/24px Titillium Web;
+	letter-spacing: 0px;
+	color: #1B579F;
+	margin-right: .25rem;
+}
+
+.end p{
+	padding-top: .25rem;
+}
+
+.end p.en-cours{
+	padding-top: .25rem;
+	text-align: left;
+	letter-spacing: 0px;
+	color: #1B579F;
+}
+
+.divider{
+	width: 458px;
+	/* height: 1px; */
+	border: 1px solid #7598C3;
+}
+
+.history-items{
+	height: 33rem;
+	overflow:scroll
+}
+
+/* styles for dissocation of items  */
+
+.dissociation h1{
+	color: #F86565;
+}
+
