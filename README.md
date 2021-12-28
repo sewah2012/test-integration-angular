@@ -1,6 +1,11 @@
 # Digieye
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+J'ai configuré un e-mail et un mot de passe statiques dans l'application pour imiter une connexion réelle.
+
+e-mail : administrateur
+mdp : admin123
+
+
 
 ## Development server
 
